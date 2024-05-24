@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfólio.home</title>
+</head>
+<body>
+    <header> 
+        <a href="home.html" class="caminho">HOME</a>
+        <a href="habilidades.html" class="caminho">HABILIDADES</a>
+        <a href="projetos.html" class="caminho">PROJETOS</a> 
+    </header>
+
+    <main>
+        <section class=" apresentação-texto">
+        <P class="apresentação-pessoal"></P>
+        <div class="apresentação-links">
+            <h2>Acesse minhas redes sociais</h2>
+            <a class="links" href="https://www.instagram.com/erick_m_t_s_?igsh=MXdqZ2Y4c3UydTNtZg=="> <img       src="imagens/instagram.png" alt="" >instagram</a>
+            <a class="links" href="https://github.com/ErickM-T-S" > <img src="imagens/github.png" alt=""> github</a>
+            <a class="links" href="https://www.linkedin.com/in/erick-matheus-santos-silva-024a34304/">
+             <img src="imagens/linkedin.png" alt=""> linkedin</a>
+        
+        </div>
+    </section>
+    <div class="apresentacao-imagem">
+            <img src="imagens/imagemApresentação.png" class=" imagem">
+        </div>
+    </main> 
+    
+    <footer>
+        <img src="imagens/Logo_Alura_Include_(1).svg" alt="">
+    </footer>  
+     
+    <script>
+var texto1= "Olá, meu nome é Erick Matheus, tenho 16 anos, faço a tilha de jogos do programa inova maranhão e estudo no CMCB XIII";
+var conteudoApresentação = document.querySelector(".apresentação-pessoal");
+var contadorDeLetras = 0;
+var atraso = 50;
+
+    function escreverTextoApresentação() {
+        if (contadorDeLetras < texto1.length) {
+        conteudoApresentação.textContent += texto1.charAt(contadorDeLetras);
+            contadorDeLetras++;
+            setTimeout(escreverTextoApresentação, atraso);
+        }
+    }
+        escreverTextoApresentação();
+
+     </script>
+    <link rel="stylesheet" href="Style.css">
+</body>
+</html>
